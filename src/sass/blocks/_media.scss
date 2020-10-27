@@ -5,6 +5,17 @@
 	.promo__wrapper {
 		margin: 3%;
 	}
+	.consultation {
+		.title_left {
+			text-align: center;
+		}
+		&__descr {
+			text-align: center;
+		}
+		.feed-form {
+			margin: 5% auto;
+		}
+	}
 }
 @media (max-width: 575px){
 	.promo {
@@ -43,9 +54,19 @@
 				padding: 0 2%;
 			}
 	}
+	.consultation {
+		.title title_left {
+			text-align: center;
+		}
+		&__descr {
+			text-align: center;
+		}
+		.feed-form {
+			margin: 5% auto;
+		}
+	}
 }
-@media (max-width: 425px) {
-	
+@media (max-width: 425px){	
 	.header {
 		&__contacts .button {
 			display: none;
@@ -87,57 +108,72 @@
 			margin-top: 10%;
 		}
 	}
-	@media (max-width: 320px) {
-		.header {
-			&__contacts .button {
-				display: none;
-			}
-			&__official {
-				display: none;
-			}
-			&__logo {
-				width: 45%;
-			}
-			&__phone {
-				font-size: 16px;
-			}
+	.consultation {
+		.container {
+			margin-top: -90px;
 		}
-		.promo {
-			&__header {
-				font-size: 23px;
-			}
-			&__subheader {
-				margin-top: 0;
-				text-align: center;
-			}
-			&__icons {
-				align-items: baseline;
-				max-width: 100%;
-			}
-			&__icon {
-				width: 100px;
-				text-align: center;
-				color: #fff;
-				font-size: 12px;
-				font-weight: 500;
-			}
-			.button_main{
-				max-width: 90%;
-			}
+		.title_left {
+			font-size: 20px;
+			text-align: center;
 		}
-		.advantages {
-			&__wrapper {
+		&__descr {
+			text-align: center;
+		}
+		.feed-form {
+			margin: 5% auto;
+		}
+	}
+}
+@media (max-width: 320px){
+	.header {
+		&__contacts .button {
+			display: none;
+		}
+		&__official {
+			display: none;
+		}
+		&__logo {
+			width: 45%;
+		}
+		&__phone {
+			font-size: 16px;
+		}
+	}
+	.promo {
+		&__header {
+			font-size: 23px;
+		}
+		&__subheader {
+			margin-top: 0;
+			text-align: center;
+		}
+		&__icons {
+			align-items: baseline;
+			max-width: 100%;
+		}
+		&__icon {
+			width: 100px;
+			text-align: center;
+			color: #fff;
+			font-size: 12px;
+			font-weight: 500;
+		}
+		.button_main{
+			max-width: 90%;
+		}
+	}
+	.advantages {
+		&__wrapper {
+		margin-top: 2%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		}
+		&__subtitle {
 			margin-top: 2%;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			}
-			&__subtitle {
-				margin-top: 2%;
-			}
-			&__item {
-				margin-top: 10%;
-			}
+		}
+		&__item {
+			margin-top: 10%;
 		}
 	}
 }
