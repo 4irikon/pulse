@@ -75,8 +75,8 @@ $(document).ready(function(){
 	$('.carousel__inner').slick({
 		speed: 1200,
 		// adaptiveHeight: true,
-		prevArrow: '<button type="button" class="slick-prev"><img src="../icons/left.svg"></button>',
-		nextArrow: '<button type="button" class="slick-next"><img src="../icons/right.svg"></button>',
+		prevArrow: '<button type="button" class="prev"><img src="../icons/left.svg"></button>',
+		nextArrow: '<button type="button" class="next"><img src="../icons/right.svg"></button>',
 		responsive: [
 			{
 				breakpoint: 992,
@@ -89,3 +89,40 @@ $(document).ready(function(){
 		
 	});
 });
+
+// const slider = tns({
+// 	container: '.carousel__inner',
+// 	items: 1,
+// 	slideBy: 'page',
+// 	autoplay: false,
+// 	controls: false,
+// 	nav: false
+// 	// controlsText: [
+// 	// 	'<img src="../icons/left.svg">',
+// 	// 	'<img src="../icons/right.svg">'
+// 	// ]
+// });
+
+// document.querySelector('.prev').addEventListener('click', function () {
+// 	slider.goTo('prev');
+// });
+// document.querySelector('.next').addEventListener('click', function () {
+// 	slider.goTo('next');
+// });
+
+// $('.owl-carousel').owlCarousel({
+// 	loop:true,
+// 	margin:10,
+// 	nav:true,
+// 	responsive:{
+// 		0:{
+// 			items:1
+// 		},
+// 		600:{
+// 			items:3
+// 		},
+// 		1000:{
+// 			items:5
+// 		}
+// 	}
+// })
