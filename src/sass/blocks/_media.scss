@@ -46,8 +46,13 @@
 	}
 	.reviews__customer img {
 		padding: .5% 5% 0 8%;
-  	}
+	}
+	.footer__info {
+		position: absolute;
+		width: 100%;
+	}
 }
+
 @media (max-width: 575px){
 	.promo {
 		min-height: 100%;
