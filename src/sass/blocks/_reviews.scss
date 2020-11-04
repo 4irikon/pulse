@@ -1,0 +1,18 @@
+.reviews__customer {	
+	margin-bottom: 10%;
+	display: flex;
+	align-items: flex-start;
+	img {
+		padding: 0.5% 5% 0 0%;
+	}
+	span {
+		color: #646464;
+		font-size: 13px;
+		font-weight: 600;
+	}
+	p {
+		font-size: 14px;
+		font-weight: 600;
+		padding-right: 5%;
+	}
+}
