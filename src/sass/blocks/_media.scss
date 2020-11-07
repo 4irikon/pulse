@@ -197,6 +197,14 @@
 		padding-right: 0;
 		margin-bottom: 15%;
 	}
+	.modal {
+		width: 280px;
+		.feed-form {
+			position: relative;
+			right: 15%;
+			width: 130%;
+		}
+	}
 }
 
 @media (max-width: 320px) {
@@ -274,5 +282,13 @@
 		height: 40px;
 		font-size: 14px;
 		}	
+	}
+	.modal {
+		width: 70%;
+		.feed-form {
+			position: relative;
+			right: 20%;
+			width: 140%;
+		}
 	}
 }
