@@ -136,6 +136,59 @@ $(document).ready(function(){
 			$('.overlay, #order').fadeIn('slow');
 		});
 	});
+
+	function validateForm(form){
+		$(form).validate({
+			rules: {
+				// simple rule, converted to {required:true}
+				name: {
+					required: true,
+					minlength: 2
+				},
+				phone: "required",
+				// compound rule
+				email: {
+					required: true,
+					email: true,
+				}
+			},
+			messages: {
+				name: {
+					required: "Пожалуйста, укажите ваше имя",
+					minlength: jQuery.validator.format("Требуется минимум {0} символа!")
+				},
+				phone: "Пожалуйста, укажите ваш № телефона",
+				email: {
+					required: "Нам нужен ваш адрес электронной почты, чтобы с вами связаться",
+					email: "Пожалуйста, укажите правельный адрес электронной почты."
+				}
+			}
+		});
+	};
+
+	validateForm('#consultation-form');
+	validateForm('#consultation form');
+	validateForm('#order form');
+
+	$('input[name=phone]').mask("+7 (999) 999-99-99");
+
+
+	// Smooth scroll and pageup
+
+	$(window).scroll(function() {
+		if ($(this).scrollTop() > 1600) {
+			$('.pageup').fadeIn();
+		} else {
+			$('.pageup').fadeOut();
+		}
+	});
+
+	$("a[href^='#']").click(function(){
+				const _href = $(this).attr("href");
+				$("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+				return false;
+	});
+
 });
 
 // const slider = tns({
